@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+#root {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.App {
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  width: 100%;
+  height: calc(100% - 10rem);
+  padding: 5rem 0;
+}
+.video-stream{
+  position: absolute;
+  right: 0;
+  bottom: 5rem;
+}
+.playerWrapper{
+  width: 20%;
+  cursor: move;
+  position: absolute;
+  right: 0;
+  bottom: calc(0px + 5rem);
+}
+.buttonMuteIcon{
+  background: url('img/mute.png') no-repeat center;
+}
+.buttonUnmuteIcon{
+  background: url('img/speaker.png') no-repeat center;
+}
+.buttonMute{
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+  bottom: 8px;
+  left: 3px;
+}
+.testButton{
+  background: #f2f2f2;
+  border-radius: 15px;
+  box-shadow: inset 1px 3px 9px -6px;
+  width: 150px;
+  text-align: center;
+  float: right;
+  padding: 4px;
+  cursor: pointer;
+}
+html {
+  overflow: hidden;
+}
+body {
+  margin: 0;
+}
